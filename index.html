@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toolbar">
+        <!-- Tools/Options Panel -->
+
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="50" value="10" />
+
+        <label for="shapeSize">Shape Size:</label>
+        <input type="range" id="shapeSize" min="1" max="200" value="50" />
+
+        <input type="color" id="colorPicker" value="#000000" />
+
+        <button id="eraser">Eraser</button>
+        <button id="lineTool">Line</button>
+        <button id="rectangleTool">Rectangle</button>
+        <button id="circleTool">Circle</button>
+        <button id="ellipseTool">Ellipse</button>
+        <button id="triangleTool">Triangle</button>
+        <button id="clearCanvas">Clear Canvas</button>
+        <button id="saveCanvas">Save Image</button>
+
+        <!-- Add more tools/buttons as needed -->
+      </div>
+
+      <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
